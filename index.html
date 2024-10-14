@@ -1,1 +1,225 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Taliq-farm.ico" type="image/x-icon">
+    <title>Taliq Farm</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .root{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F3EFF5;
+            margin: 0;
+        }
+        header {
+            margin-bottom: 20px;
+            nav{
+                display: flex;
+                height: 13vh;
+                padding-inline: 5%;
+                justify-content: space-between;
+                align-items: center;
+                .logo{
+                    height: 90%;
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
+            ul{
+                margin: 0;
+                display: flex;
+                gap: 25px;
+                font-size: 20px;
+                list-style-type: none;
+                width: max-content;
+
+            }
+            button{
+                height: fit-content;
+                width: fit-content;
+                border: none;
+                border-radius: 5px;
+                font-size: 17px;
+                background-color: #3F7D20;
+                color: #F3EFF5;
+                padding: 7px 25px;
+            }
+            .banner{
+                height: 80vh;
+                width: 100%;
+                position: relative;
+                display: flex;
+                .inf{
+                    z-index: 1;
+                    position: relative;
+                    left: 10%;
+                    align-self: center;
+                    color: #F3EFF5;
+                    margin-bottom: 100px;
+                    h2{
+                        font-size: 80px;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+                img{
+                    position: absolute;
+                    height: 100%;
+                    z-index: 0;
+                    top: 0;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .stats{
+            background-color: #3F7D20;
+            width: 100%;
+            height: 120px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .stat{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #F3EFF5;
+                p{
+                    font-size: 19px;
+                    font-weight: 100;
+                    margin: 0;
+                }
+            }
+            h3{
+                text-align: center;
+                font-weight: bolder;
+                font-size: 30px;
+                margin: 0;
+            }
+        }
+        section.about{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 3% 0;
+            align-items: center;
+            p{
+                margin: 0;
+                font-size: 19px;
+                color: #454955;
+            }
+            h2{
+                margin-bottom: 15px;
+                color: #0D0A0B;
+                font-size: 35px;
+            }
+            .abtmain{
+                gap: 3%;
+                display: flex;
+                padding:2% 5%;
+                justify-content: space-evenly;
+                img{
+                    width: 40%;
+                    object-fit: cover;
+                }
+                p{
+                    width: 45%;
+                    font-size: 19px;
+                    line-height: 28px;
+                }
+            }
+        }
+        section.service{
+            display: flex;
+            justify-content: space-evenly;
+            .card{
+                width: 25%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="Taliq-farm.ico" alt="">
+                </div>
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Breeds</li>
+                    <li>Market</li>
+                    <li>About Us</li>
+                </ul>
+                <button>Call Us</button>
+            </nav>
+            <div class="banner">
+                <div class="inf">
+                    <h2>Taliq <br> Farm</h2>
+                    <p>Bringing the Farm to Your Family.</p>
+                </div>
+                
+                <img src="banner.jpeg" alt="">
+            </div>
+        </header>
+        <div class="stats">
+            <div class="stat">
+                <h3>100+</h3>
+                <p>Animals & Birds</p>
+            </div>
+
+            <div class="stat">
+                <h3>50+</h3>
+                <p>Breeds</p>
+            </div>
+
+            <div class="stat">
+                <h3>20+</h3>
+                <p>satisfied customers</p>
+            </div>
+
+            <div class="stat">
+                <h3>10+</h3>
+                <p>certified professionals</p>
+            </div>
+        </div>
+        <section class="about">
+            <h2>Welcome to Taliq Farm</h2>
+            <p>Where we Bring the Farm to Your Family.</p>
+            <div class="abtmain">
+                <img src="banner.jpeg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat voluptates corrupti dolor! Distinctio ut sequi, qui, temporibus voluptatum necessitatibus architecto dolor similique corrupti iste cupiditate aliquam quisquam accusantium error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sed. Voluptas odio tempore harum, ratione omnis, mollitia et consequatur quos laborum at, magni totam fugit dolore quasi sapiente voluptatum explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in vero debitis non totam cupiditate. Vel illo recusandae aspernatur alias autem accusantium atque pariatur, officia necessitatibus quam facilis tempore neque!</p>
+            </div>
+        </section>
+        <section class="service">
+            <div class="card">
+                <img src="banner.jpeg" alt="">
+                <h3>Periodic Vaccination and medical check-up</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dicta enim, ea culpa totam reiciendis? Tempora ipsa sit perferendis aliquid, consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+            </div>
+            <div class="card">
+                <img src="banner.jpeg" alt="">
+                <h3>Periodic Vaccination and medical check-up</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dicta enim, ea culpa totam reiciendis? Tempora ipsa sit perferendis aliquid, consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+            </div>
+            <div class="card">
+                <img src="banner.jpeg" alt="">
+                <h3>Periodic Vaccination and medical check-up</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dicta enim, ea culpa totam reiciendis? Tempora ipsa sit perferendis aliquid, consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
