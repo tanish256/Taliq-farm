@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Taliq-farm.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Taliq Farm</title>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
         }
-        .root{
+
+        body * {
+            z-index: 1;
+        }
+
+        .root {
             font-family: Arial, Helvetica, sans-serif;
             background-color: #F3EFF5;
             margin: 0;
+            position: relative;
+            z-index: 1;
         }
+
         header {
             margin-bottom: 20px;
-            nav{
+
+            nav {
                 display: flex;
                 height: 13vh;
                 padding-inline: 5%;
                 justify-content: space-between;
                 align-items: center;
-                .logo{
+
+                .logo {
                     height: 90%;
-                    img{
+
+                    img {
                         height: 100%;
                     }
                 }
             }
-            ul{
+
+            ul {
                 margin: 0;
                 display: flex;
                 gap: 25px;
@@ -39,7 +53,8 @@
                 width: max-content;
 
             }
-            button{
+
+            button {
                 height: fit-content;
                 width: fit-content;
                 border: none;
@@ -49,27 +64,32 @@
                 color: #F3EFF5;
                 padding: 7px 25px;
             }
-            .banner{
+
+            .banner {
                 height: 80vh;
                 width: 100%;
                 position: relative;
                 display: flex;
-                .inf{
+
+                .inf {
                     z-index: 1;
                     position: relative;
                     left: 10%;
                     align-self: center;
                     color: #F3EFF5;
                     margin-bottom: 100px;
-                    h2{
+
+                    h2 {
                         font-size: 80px;
                         margin: 0;
                     }
-                    p{
+
+                    p {
                         font-size: 20px;
                     }
                 }
-                img{
+
+                img {
                     position: absolute;
                     height: 100%;
                     z-index: 0;
@@ -79,76 +99,271 @@
                 }
             }
         }
-        .stats{
+
+        .stats {
             background-color: #3F7D20;
             width: 100%;
             height: 120px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            .stat{
+
+            .stat {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 color: #F3EFF5;
-                p{
+
+                p {
                     font-size: 19px;
                     font-weight: 100;
                     margin: 0;
                 }
             }
-            h3{
+
+            h3 {
                 text-align: center;
                 font-weight: bolder;
                 font-size: 30px;
                 margin: 0;
             }
         }
-        section.about{
+
+        section.about {
             width: 100%;
             display: flex;
             flex-direction: column;
-            padding: 3% 0;
+            padding: 2% 0;
             align-items: center;
-            p{
+
+            p {
                 margin: 0;
                 font-size: 19px;
                 color: #454955;
             }
-            h2{
+
+            h2 {
                 margin-bottom: 15px;
                 color: #0D0A0B;
                 font-size: 35px;
             }
-            .abtmain{
+
+            .abtmain {
                 gap: 3%;
                 display: flex;
-                padding:2% 5%;
+                padding: 2% 5%;
                 justify-content: space-evenly;
-                img{
+                img {
                     width: 40%;
                     object-fit: cover;
                 }
-                p{
+                p {
                     width: 45%;
                     font-size: 19px;
                     line-height: 28px;
                 }
-            }
-        }
-        section.service{
-            display: flex;
-            justify-content: space-evenly;
-            .card{
-                width: 25%;
-                img{
-                    width: 100%;
+                p::after {
+                    content: " ...";
                 }
             }
         }
+
+        section.service {
+            display: flex;
+            padding: 3%;
+            justify-content: space-evenly;
+
+            .card {
+                background-color: #72B01D;
+                width: 25%;
+                border-radius: 7px;
+                overflow: hidden;
+
+                p {
+                    color: #F3EFF5;
+                    padding-inline: 12px;
+                    margin: 0;
+                    margin-bottom: 7px;
+                }
+
+                h3 {
+                    margin: 5px 0;
+                    padding-inline: 14px;
+                    text-align: center;
+                    color: #F3EFF5;
+                }
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 5/3;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        section.overlay {
+            margin: 3% 0;
+            width: 100%;
+            height: 30vh;
+            background-color: #00000030;
+        }
+
+        img.below {
+            width: 100vw;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            position: fixed;
+        }
+
+        footer {
+            font-family: sans-serif;
+            width: 100%;
+            background-color: #3F7D20;
+            position: relative;
+            z-index: 1;
+            color: #F3EFF5;
+            min-height: 30vh;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+
+            .contact {
+                .fa {
+                    font-size: 40px;
+                    margin-inline: 10px;
+                }
+
+                p:last-child {
+                    width: 50%;
+                }
+            }
+        }
+
+        .power {
+            position: absolute;
+            bottom: 0;
+            padding-inline: 10px;
+            color: #72B01D;
+            left: 0;
+        }
+
+        @media (max-width:650px) {
+            header {
+                .banner {
+                    height: 50vh;
+                }
+
+                nav {
+                    width: 100%;
+                    overflow: hidden;
+                    padding-inline: 0;
+
+                    ul,
+                    button {
+                        display: none;
+                    }
+                }
+            }
+
+            .stats {
+                flex-wrap: wrap;
+                gap: 7px;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    text-wrap: wrap;
+                    font-size: 10px;
+                }
+            }
+
+            section.about {
+                h2 {
+                    width: 80%;
+                    font-size: 28px;
+                    text-align: center;
+                }
+
+                p {
+                    width: 80%;
+                    text-align: center;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+
+                .abtmain {
+                    flex-direction: column;
+                    gap: 15px;
+                    align-items: center;
+
+                    img {
+                        width: 95%;
+                    }
+
+                    p {
+                        max-height: 50vh;
+                        overflow-y: hidden;
+                        width: 97%;
+                    }
+
+                    p::after {
+                        content: "...";
+                    }
+                }
+            }
+
+            section.service {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                .card {
+                    width: 92%;
+                    border-radius: 5px;
+                }
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 10%;
+            }
+            header {
+                .banner {
+                    .inf {
+                        z-index: 1;
+                        position: relative;
+                        left: 10%;
+                        align-self: center;
+                        color: #F3EFF5;
+                        margin-bottom: 50px;
+
+                        h2 {
+                            font-size: 55px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            
+        img.below {
+            height: 30vh;
+            object-fit: cover;
+            position: relative;
+        }
+        }
     </style>
 </head>
+
 <body>
     <div class="root">
         <header>
@@ -170,7 +385,7 @@
                     <h2>Taliq <br> Farm</h2>
                     <p>Bringing the Farm to Your Family.</p>
                 </div>
-                
+
                 <img src="banner.jpeg" alt="">
             </div>
         </header>
@@ -200,26 +415,53 @@
             <p>Where we Bring the Farm to Your Family.</p>
             <div class="abtmain">
                 <img src="banner.jpeg" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat voluptates corrupti dolor! Distinctio ut sequi, qui, temporibus voluptatum necessitatibus architecto dolor similique corrupti iste cupiditate aliquam quisquam accusantium error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sed. Voluptas odio tempore harum, ratione omnis, mollitia et consequatur quos laborum at, magni totam fugit dolore quasi sapiente voluptatum explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus in vero debitis non totam cupiditate. Vel illo recusandae aspernatur alias autem accusantium atque pariatur, officia necessitatibus quam facilis tempore neque!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat voluptates corrupti dolor!
+                    Distinctio ut sequi, qui, temporibus voluptatum necessitatibus architecto dolor similique corrupti
+                    iste cupiditate aliquam quisquam accusantium error. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. At, sed. Voluptas odio tempore harum, ratione omnis, mollitia et consequatur quos
+                    laborum at, magni totam fugit dolore quasi sapiente voluptatum explicabo. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Ducimus in vero debitis non totam cupiditate. Vel illo recusandae
+                    aspernatur alias autem accusantium atque pariatur, officia necessitatibus quam facilis tempore
+                    neque!</p>
             </div>
         </section>
         <section class="service">
             <div class="card">
                 <img src="banner.jpeg" alt="">
                 <h3>Periodic Vaccination and medical check-up</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dicta enim, ea culpa totam reiciendis? Tempora ipsa sit perferendis aliquid, consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+                <p>consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
             </div>
             <div class="card">
                 <img src="banner.jpeg" alt="">
                 <h3>Periodic Vaccination and medical check-up</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dicta enim, ea culpa totam reiciendis? Tempora ipsa sit perferendis aliquid, consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+                <p>consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
             </div>
             <div class="card">
                 <img src="banner.jpeg" alt="">
                 <h3>Periodic Vaccination and medical check-up</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dicta enim, ea culpa totam reiciendis? Tempora ipsa sit perferendis aliquid, consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+                <p> consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
             </div>
         </section>
     </div>
+    <section class="overlay">
+        <img class="below" src="below.png" alt="">
+
+    </section>
+    <footer>
+        <div class="info">
+            <h2>Taliq Farm</h2>
+            <p>Where Goats Roam Free and Flavours are Bold <br> Unleash the Exotic!</p>
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>+(256) 707 838 827</p>
+            <p>plot 68 & 71, Buwaya, kasanje, Wakiso District, Uganda</p>
+            <i class="fa fa-facebook-square" style="color:#0D4E9D;"></i>
+            <i class="fa fa-twitter-square" style="color:#1BA7D1;"></i>
+            <i class="fa fa-linkedin-square" style="color:#0071D3;"></i>
+        </div>
+        <p class="power">powered by SCEC Technologies</p>
+    </footer>
 </body>
+
 </html>
