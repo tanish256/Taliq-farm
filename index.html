@@ -157,16 +157,19 @@
                 display: flex;
                 padding: 2% 5%;
                 justify-content: space-evenly;
+
                 img {
                     width: 40%;
                     object-position: left;
                     object-fit: cover;
                 }
+
                 p {
                     width: 45%;
                     font-size: 19px;
                     line-height: 28px;
                 }
+
                 p::after {
                     content: " ...";
                 }
@@ -262,11 +265,12 @@
                 }
 
                 nav {
-                    
+
                     width: 90%;
                     overflow: hidden;
                     padding-inline: 5%;
-                    ul{
+
+                    ul {
                         display: none;
                         z-index: 2;
                         position: absolute;
@@ -279,7 +283,8 @@
                         background-color: #50a128;
                         flex-direction: column;
                     }
-                    button{
+
+                    button {
                         padding: 10px 25px;
                         margin: 0 10px;
                         background-color: #0071D3;
@@ -353,8 +358,10 @@
                 text-align: center;
                 padding-bottom: 10%;
             }
+
             header {
                 position: relative;
+
                 .banner {
                     .inf {
                         z-index: 1;
@@ -374,40 +381,45 @@
                     }
                 }
             }
-            
-        img.below {
-            height: 30vh;
-            object-fit: cover;
-            position: relative;
+
+            img.below {
+                height: 30vh;
+                object-fit: cover;
+                position: relative;
+            }
+
+            .McButton {
+                position: absolute;
+                right: 5px;
+                margin: 10px;
+                width: 44px;
+                justify-self: center;
+                height: 33px;
+                cursor: pointer;
+            }
+
+            .McButton b {
+                position: absolute;
+                left: 0;
+                width: 44px;
+                height: 3px;
+                background-color: rgb(0, 0, 0);
+            }
+
+            .McButton b:nth-child(1) {
+                top: 0;
+            }
+
+            .McButton b:nth-child(2) {
+                top: 50%;
+            }
+
+            .McButton b:nth-child(3) {
+                top: 100%;
+            }
         }
-        .McButton {
-  position: absolute;
-  right: 5px;
-  margin: 10px;
-  width: 44px;
-  justify-self: center;
-  height: 33px;
-  cursor: pointer;
-}
-.McButton b {
-  position: absolute;
-  left: 0;
-  width: 44px;
-  height: 3px;
-  background-color: rgb(0, 0, 0);
-}
-.McButton b:nth-child(1) {
-  top: 0;
-}
-.McButton b:nth-child(2) {
-  top: 50%;
-}
-.McButton b:nth-child(3) {
-  top: 100%;
-}
-        }
-        
-/* McButton */
+
+        /* McButton */
     </style>
 </head>
 
@@ -426,16 +438,16 @@
                     <li>About Us</li>
                     <button>Call Us</button>
                 </ul>
-                
+
                 <a class="McButton" data="hamburger-menu">
                     <b></b>
                     <b></b>
                     <b></b>
-                  </a>
+                </a>
             </nav>
-            
+
             <div class="banner">
-                <div  class="inf">
+                <div class="inf">
                     <h2 data-aos="fade-up" data-aos-duration="800">Taliq <br> Farm</h2>
                     <p data-aos="fade-up" data-aos-duration="1000">Bringing the Farm to Your Family.</p>
                 </div>
@@ -461,7 +473,7 @@
             <div data-aos="fade-up" data-aos-duration="800" class="stat">
                 <h3>50+</h3>
                 <p>Animal Breeds</p>
-                
+
             </div>
         </div>
         <section class="about">
@@ -469,31 +481,33 @@
             <p data-aos="fade-up" data-aos-duration="800">Where we Bring the Farm to Your Family.</p>
             <div class="abtmain">
                 <img data-aos="fade-up" data-aos-duration="800" src="abt.png" alt="">
-                <p data-aos="fade-up" data-aos-duration="800">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat voluptates corrupti dolor!
-                    Distinctio ut sequi, qui, temporibus voluptatum necessitatibus architecto dolor similique corrupti
-                    iste cupiditate aliquam quisquam accusantium error. Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. At, sed. Voluptas odio tempore harum, ratione omnis, mollitia et consequatur quos
-                    laborum at, magni totam fugit dolore quasi sapiente voluptatum explicabo. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Ducimus in vero debitis non totam cupiditate. Vel illo recusandae
-                    aspernatur alias autem accusantium atque pariatur, officia necessitatibus quam facilis tempore
-                    neque!</p>
+                <p data-aos="fade-up" data-aos-duration="800">At Taliq Farm, we take pride in creating a healthy and
+                    sustainable environment for our livestock. Through advanced farming practices and modern facilities,
+                    we ensure our animals are well-cared for, leading to higher quality products. With a commitment to
+                    animal welfare and customer satisfaction, we aim to deliver the best from our farm to your family.
+                </p>
             </div>
         </section>
         <section class="service">
             <div data-aos="fade-up" data-aos-duration="800" class="card">
                 <img src="doctor.png" alt="">
                 <h3>Periodic Vaccination and medical check-up</h3>
-                <p>we conduct routine vaccinations and comprehensive health check-ups. This proactive approach helps prevent diseases, supports immune health, and keeps our animals in peak condition year-round.</p>
+                <p>we conduct routine vaccinations and comprehensive health check-ups. This proactive approach helps
+                    prevent diseases, supports immune health, and keeps our animals in peak condition year-round.</p>
             </div>
             <div data-aos="fade-up" data-aos-duration="800" class="card">
                 <img src="space.png" alt="">
                 <h3>Spacious area for better metabolism</h3>
-                <p>We provide our livestock with ample space to move freely, promoting better metabolism and overall well-being. This ensures they remain active, healthy, and thrive in a natural, stress-free environment.</p>
+                <p>We provide our livestock with ample space to move freely, promoting better metabolism and overall
+                    well-being. This ensures they remain active, healthy, and thrive in a natural, stress-free
+                    environment.</p>
             </div>
             <div data-aos="fade-up" data-aos-duration="800" class="card">
                 <img src="shelter.png" alt="">
                 <h3>Modern, clean shelters</h3>
-                <p> Our livestock are housed in modern, well-ventilated shelters that are regularly cleaned and maintained. These hygienic living spaces help protect against disease, reduce stress, and provide a comfortable environment for optimal health and productivity.</p>
+                <p> Our livestock are housed in modern, well-ventilated shelters that are regularly cleaned and
+                    maintained. These hygienic living spaces help protect against disease, reduce stress, and provide a
+                    comfortable environment for optimal health and productivity.</p>
             </div>
         </section>
     </div>
@@ -516,57 +530,59 @@
         </div>
         <p class="power">powered by SCEC Technologies</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
     <script>
         var McButton = $("[data=hamburger-menu]");
-var McBar1 = McButton.find("b:nth-child(1)");
-var McBar2 = McButton.find("b:nth-child(2)");
-var McBar3 = McButton.find("b:nth-child(3)");
+        var McBar1 = McButton.find("b:nth-child(1)");
+        var McBar2 = McButton.find("b:nth-child(2)");
+        var McBar3 = McButton.find("b:nth-child(3)");
 
 
 
-McButton.click( function() {
-  $(this).toggleClass("active");
-  $("#menu").slideToggle({
-    duration: 700,
-    easing: "swing",
-    start: function() {
-        $("#menu").css("display", "flex");
-    }
-});
-  if (McButton.hasClass("active")) {
-    McBar1.velocity({ top: "50%" }, {duration: 200, easing: "swing"});
-    McBar3.velocity({ top: "50%" }, {duration: 200, easing: "swing"})
-          .velocity({rotateZ:"90deg"}, {duration: 800, delay: 200, easing: [500,20] });
-    McButton.velocity({rotateZ:"135deg"}, {duration: 800, delay: 200, easing: [500,20] });
-  } else {
-    McButton.velocity("reverse");
-    McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] })
-          .velocity({ top: "100%" }, {duration: 200, easing: "swing"});
-    McBar1.velocity("reverse", {delay: 800});
-  }
-});
-/*$element.velocity({ 
-    width: "500px",
-    property2: value2
-}, {
-    duration: 400,
-    easing: "swing",
-    queue: "",
-    begin: undefined,
-    progress: undefined,
-    complete: undefined,
-    display: undefined,
-    visibility: undefined,
-    loop: false,
-    delay: false,
-    mobileHA: true
-});*/
+        McButton.click(function () {
+            $(this).toggleClass("active");
+            $("#menu").slideToggle({
+                duration: 700,
+                easing: "swing",
+                start: function () {
+                    $("#menu").css("display", "flex");
+                }
+            });
+            if (McButton.hasClass("active")) {
+                McBar1.velocity({ top: "50%" }, { duration: 200, easing: "swing" });
+                McBar3.velocity({ top: "50%" }, { duration: 200, easing: "swing" })
+                    .velocity({ rotateZ: "90deg" }, { duration: 800, delay: 200, easing: [500, 20] });
+                McButton.velocity({ rotateZ: "135deg" }, { duration: 800, delay: 200, easing: [500, 20] });
+            } else {
+                McButton.velocity("reverse");
+                McBar3.velocity({ rotateZ: "0deg" }, { duration: 800, easing: [500, 20] })
+                    .velocity({ top: "100%" }, { duration: 200, easing: "swing" });
+                McBar1.velocity("reverse", { delay: 800 });
+            }
+        });
+        /*$element.velocity({ 
+            width: "500px",
+            property2: value2
+        }, {
+            duration: 400,
+            easing: "swing",
+            queue: "",
+            begin: undefined,
+            progress: undefined,
+            complete: undefined,
+            display: undefined,
+            visibility: undefined,
+            loop: false,
+            delay: false,
+            mobileHA: true
+        });*/
 
     </script>
 </body>
+
 </html>
