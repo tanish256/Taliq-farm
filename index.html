@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Taliq-farm.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Taliq Farm</title>
     <style>
         body {
             margin: 0;
             padding: 0;
+            background-color: #F3EFF5;
         }
 
         body * {
@@ -117,7 +120,7 @@
 
                 p {
                     font-size: 19px;
-                    font-weight: 100;
+                    font-weight: 300;
                     margin: 0;
                 }
             }
@@ -176,13 +179,14 @@
             justify-content: space-evenly;
 
             .card {
-                background-color: #72B01D;
+                background-color: #50a128;
                 width: 25%;
                 border-radius: 7px;
                 overflow: hidden;
 
                 p {
                     color: #F3EFF5;
+                    line-height: 20px;
                     padding-inline: 12px;
                     margin: 0;
                     margin-bottom: 7px;
@@ -258,13 +262,27 @@
                 }
 
                 nav {
-                    width: 100%;
+                    
+                    width: 90%;
                     overflow: hidden;
-                    padding-inline: 0;
-
-                    ul,
-                    button {
+                    padding-inline: 5%;
+                    ul{
                         display: none;
+                        z-index: 2;
+                        position: absolute;
+                        top: 13vh;
+                        left: 0;
+                        width: 100%;
+                        color: #F3EFF5;
+                        padding: 5% 0;
+                        text-align: center;
+                        background-color: #50a128;
+                        flex-direction: column;
+                    }
+                    button{
+                        padding: 10px 25px;
+                        margin: 0 10px;
+                        background-color: #0071D3;
                     }
                 }
             }
@@ -336,6 +354,7 @@
                 padding-bottom: 10%;
             }
             header {
+                position: relative;
                 .banner {
                     .inf {
                         z-index: 1;
@@ -361,7 +380,34 @@
             object-fit: cover;
             position: relative;
         }
+        .McButton {
+  position: absolute;
+  right: 5px;
+  margin: 10px;
+  width: 44px;
+  justify-self: center;
+  height: 33px;
+  cursor: pointer;
+}
+.McButton b {
+  position: absolute;
+  left: 0;
+  width: 44px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
+.McButton b:nth-child(1) {
+  top: 0;
+}
+.McButton b:nth-child(2) {
+  top: 50%;
+}
+.McButton b:nth-child(3) {
+  top: 100%;
+}
         }
+        
+/* McButton */
     </style>
 </head>
 
@@ -372,51 +418,58 @@
                 <div class="logo">
                     <img src="Taliq-farm.ico" alt="">
                 </div>
-                <ul>
+                <ul id="menu">
                     <li>Home</li>
                     <li>Services</li>
                     <li>Breeds</li>
                     <li>Market</li>
                     <li>About Us</li>
+                    <button>Call Us</button>
                 </ul>
-                <button>Call Us</button>
+                
+                <a class="McButton" data="hamburger-menu">
+                    <b></b>
+                    <b></b>
+                    <b></b>
+                  </a>
             </nav>
+            
             <div class="banner">
-                <div class="inf">
-                    <h2>Taliq <br> Farm</h2>
-                    <p>Bringing the Farm to Your Family.</p>
+                <div  class="inf">
+                    <h2 data-aos="fade-up" data-aos-duration="800">Taliq <br> Farm</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">Bringing the Farm to Your Family.</p>
                 </div>
-
                 <img src="banner.jpeg" alt="">
             </div>
         </header>
         <div class="stats">
-            <div class="stat">
+            <div data-aos="fade-up" data-aos-duration="800" class="stat">
                 <h3>100+</h3>
                 <p>Animals & Birds</p>
             </div>
 
-            <div class="stat">
-                <h3>50+</h3>
-                <p>Breeds</p>
-            </div>
-
-            <div class="stat">
-                <h3>20+</h3>
-                <p>satisfied customers</p>
-            </div>
-
-            <div class="stat">
+            <div data-aos="fade-up" data-aos-duration="800" class="stat">
                 <h3>10+</h3>
-                <p>certified professionals</p>
+                <p>Certified professionals</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="800" class="stat">
+                <h3>20+</h3>
+                <p>Satisfied customers</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="800" class="stat">
+                <h3>50+</h3>
+                <p>Animal Breeds</p>
+                
             </div>
         </div>
         <section class="about">
-            <h2>Welcome to Taliq Farm</h2>
-            <p>Where we Bring the Farm to Your Family.</p>
+            <h2 data-aos="fade-up" data-aos-duration="800">Welcome to Taliq Farm</h2>
+            <p data-aos="fade-up" data-aos-duration="800">Where we Bring the Farm to Your Family.</p>
             <div class="abtmain">
-                <img src="abt.png" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat voluptates corrupti dolor!
+                <img data-aos="fade-up" data-aos-duration="800" src="abt.png" alt="">
+                <p data-aos="fade-up" data-aos-duration="800">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat voluptates corrupti dolor!
                     Distinctio ut sequi, qui, temporibus voluptatum necessitatibus architecto dolor similique corrupti
                     iste cupiditate aliquam quisquam accusantium error. Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. At, sed. Voluptas odio tempore harum, ratione omnis, mollitia et consequatur quos
@@ -427,20 +480,20 @@
             </div>
         </section>
         <section class="service">
-            <div class="card">
+            <div data-aos="fade-up" data-aos-duration="800" class="card">
                 <img src="doctor.png" alt="">
                 <h3>Periodic Vaccination and medical check-up</h3>
-                <p>consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+                <p>we conduct routine vaccinations and comprehensive health check-ups. This proactive approach helps prevent diseases, supports immune health, and keeps our animals in peak condition year-round.</p>
             </div>
-            <div class="card">
+            <div data-aos="fade-up" data-aos-duration="800" class="card">
                 <img src="space.png" alt="">
-                <h3>Periodic Vaccination and medical check-up</h3>
-                <p>consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+                <h3>Spacious area for better metabolism</h3>
+                <p>We provide our livestock with ample space to move freely, promoting better metabolism and overall well-being. This ensures they remain active, healthy, and thrive in a natural, stress-free environment.</p>
             </div>
-            <div class="card">
+            <div data-aos="fade-up" data-aos-duration="800" class="card">
                 <img src="shelter.png" alt="">
-                <h3>Periodic Vaccination and medical check-up</h3>
-                <p> consequatur a magni iste. Voluptatum, repellendus! Ut adipisci consectetur fugit!</p>
+                <h3>Modern, clean shelters</h3>
+                <p> Our livestock are housed in modern, well-ventilated shelters that are regularly cleaned and maintained. These hygienic living spaces help protect against disease, reduce stress, and provide a comfortable environment for optimal health and productivity.</p>
             </div>
         </section>
     </div>
@@ -448,7 +501,7 @@
         <img class="below" src="below.png" alt="">
 
     </section>
-    <footer>
+    <footer data-aos="zoom-in-up" data-aos-duration="800">
         <div class="info">
             <h2>Taliq Farm</h2>
             <p>Where Goats Roam Free and Flavours are Bold <br> Unleash the Exotic!</p>
@@ -463,6 +516,57 @@
         </div>
         <p class="power">powered by SCEC Technologies</p>
     </footer>
-</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script>
+        var McButton = $("[data=hamburger-menu]");
+var McBar1 = McButton.find("b:nth-child(1)");
+var McBar2 = McButton.find("b:nth-child(2)");
+var McBar3 = McButton.find("b:nth-child(3)");
 
+
+
+McButton.click( function() {
+  $(this).toggleClass("active");
+  $("#menu").slideToggle({
+    duration: 700,
+    easing: "swing",
+    start: function() {
+        $("#menu").css("display", "flex");
+    }
+});
+  if (McButton.hasClass("active")) {
+    McBar1.velocity({ top: "50%" }, {duration: 200, easing: "swing"});
+    McBar3.velocity({ top: "50%" }, {duration: 200, easing: "swing"})
+          .velocity({rotateZ:"90deg"}, {duration: 800, delay: 200, easing: [500,20] });
+    McButton.velocity({rotateZ:"135deg"}, {duration: 800, delay: 200, easing: [500,20] });
+  } else {
+    McButton.velocity("reverse");
+    McBar3.velocity({rotateZ:"0deg"}, {duration: 800, easing: [500,20] })
+          .velocity({ top: "100%" }, {duration: 200, easing: "swing"});
+    McBar1.velocity("reverse", {delay: 800});
+  }
+});
+/*$element.velocity({ 
+    width: "500px",
+    property2: value2
+}, {
+    duration: 400,
+    easing: "swing",
+    queue: "",
+    begin: undefined,
+    progress: undefined,
+    complete: undefined,
+    display: undefined,
+    visibility: undefined,
+    loop: false,
+    delay: false,
+    mobileHA: true
+});*/
+
+    </script>
+</body>
 </html>
