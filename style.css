@@ -406,3 +406,12 @@ footer {
         top: 100%;
     }
 }
+@media (min-width:650px) {
+    header {
+        nav{
+            ul{
+                display: flex !important;
+            }
+        }
+    }
+}
