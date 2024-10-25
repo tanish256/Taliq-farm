@@ -36,6 +36,17 @@ header {
     }
 
     ul {
+        a{
+            text-decoration: none;
+            color: #0D0A0B;
+        }
+        a.active{
+            color: #72B01D;
+            border-bottom: #72B01D 4px solid;
+        }
+        a.grey{
+            filter: opacity(0.3);
+        }
         margin: 0;
         display: flex;
         gap: 25px;
@@ -270,6 +281,18 @@ footer {
                 text-align: center;
                 background-color: #50a128;
                 flex-direction: column;
+                a{
+                    color: #F3EFF5;
+                }
+                a.active{
+                    align-self: center;
+                    width: fit-content;
+                    color: #9ee041;
+                    border-bottom: #9ee041 4px solid;
+                }
+                a.grey{
+                    
+                }
             }
 
             button {

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Taliq-farm.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mpanga Halaal Goats.</title>
+</head>
+<style>
+    header {
+        height: unset;
+        .banner {
+            padding:5% 5%;
+            height: unset;
+            background-color: #3F7D20;
+            width: 90%;
+            justify-content: space-evenly;
+            display: flex;
+            .info{
+                color: #F3EFF5;
+                width: 45%;
+                h2{
+                    font-weight:550;
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                }
+            }
+            img{
+        position: unset;
+            width: 45%;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+    }}
+    }
+    .NB{
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        img{
+            width: 40%;
+        }
+        .inf{
+            width: 40%;
+            h3{
+                font-weight:550;
+                font-size: 2rem;
+            }
+            p{
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                }
+        }
+    }
+    .Eid{
+        background: linear-gradient(#3F7D20 70%, transparent 30%) no-repeat;
+        padding-bottom: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        img{
+            width: 40%;
+        }
+        .inf{
+            width: 40%;
+            color: #F3EFF5;
+            h3{
+                font-weight:550;
+                font-size: 2rem;
+            }
+            p{
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                }
+        }
+    }
+    .overlay{ 
+        display: grid;
+        .fyf{
+            background-color: #ffffff00;
+            backdrop-filter: blur(5px);
+        position: relative;
+        z-index: 2;
+        border: 6px #50a128 solid;
+        justify-self: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #50a128;
+        align-self: center;
+        font-family: sans-serif;
+        padding: 10px 50px;
+        width: fit-content;
+        
+    }
+}
+@media (max-width:650px) {
+    header .banner {
+        padding: 0;
+            background-color: #3F7D20;
+            width: 100%;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+            .info{
+                width: 90%;
+                padding: 2% 5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    text-align: center;
+                }
+            }
+            img{
+            width: 100%;
+
+    }}
+    .NB{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding-bottom: 0;
+        img{
+            width: 100%;
+        }
+        .inf{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            h3{
+                width: 90%;
+                margin: auto;
+                font-weight:550;
+                text-align: center;
+                font-size: 2rem;
+            }
+            p{
+                width: 90%;
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                }
+        }
+    }
+    .Eid{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        padding:2% 0;
+        img{
+            width: 100%;
+        }
+        .inf{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            h3{
+                width: 90%;
+                margin: auto;
+                font-weight:550;
+                text-align: center;
+                font-size: 2rem;
+            }
+            p{
+                width: 90%;
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                }
+        }
+    }
+    section.overlay{ 
+        display: grid;
+        margin: 0;
+        .fyf{
+            background-color: #ffffff00;
+            backdrop-filter: blur(5px);
+        position: absolute;
+        z-index: 2;
+        border: 6px #50a128 solid;
+        justify-self: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #50a128;
+        align-self: center;
+        font-family: sans-serif;
+        padding: 10px 50px;
+        width: fit-content;
+        
+    }
+    }
+    p{
+        font-size: 1.15rem !important;
+        line-height: 1.55rem !important;
+    }
+}
+</style>
+<body>
+    <div class="root">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="Taliq-farm.ico" alt="">
+                </div>
+                <ul id="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a class="grey" href="#"><li>Services</li></a>
+                    <a href="breeding.html"><li>Breeding</li></a>
+                    <a class="active" href="#"><li>Slaughter</li></a>
+                    <a class="grey" href="#"><li>About Us</li></a>
+                    <button>Call Us</button>
+                </ul>
+
+                <a class="McButton" data="hamburger-menu">
+                    <b></b>
+                    <b></b>
+                    <b></b>
+                </a>
+            </nav>
+
+            <div class="banner">
+                <img src="meat.png" alt="">
+               <div class="info">
+                <h2>We Only Slaughter fully grown Healthy goats</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto tempore aliquid aspernatur ducimus. Numquam totam sed illo repellendus animi, nisi veritatis nihil, labore, quibusdam placeat asperiores veniam ea explicabo eligendi!</p>
+               </div>
+
+            </div>
+        </header>
+        <section class="NB">
+            <div class="inf">
+                <h3>Naturally Better</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, voluptate dolorum! Illum est minima aspernatur. Sit minima similique, optio eveniet impedit velit, nisi commodi nihil incidunt numquam, quae odit deleniti.</p>
+            </div>
+            <img src="goat1.png" alt="">
+        </section>
+        <section class="Eid">
+            <img src="eid.png" alt="">
+            <div class="inf">
+                <h3>Eid Al-Adha Preparations</h3>
+                <p>At Mpanga Farm, we offer top-quality goats and professional slaughtering services for Eid Al-Adha. Our goats are raised with care, and our services ensure everything is done according to Islamic guidelines. Let us make your Eid preparations seamless and stress-free!</p>
+            </div>
+        </section>
+
+    </div>
+    <section class="overlay">
+        <div class="fyf">
+            <p>For Your Family</p>
+        </div>
+        <img class="below" src="meat2.png" alt="">
+
+    </section>
+    <footer data-aos="zoom-in-up" data-aos-duration="800">
+        <div class="info">
+            <h2>Mpanga Halaal corp.</h2>
+            <p>Where Goats Roam Free and Flavours are Bold <br> Unleash the Exotic!</p>
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>+(256) 757 892297</p>
+            <p>plot 68 & 71, Buwaya, kasanje, Wakiso District, Uganda</p>
+            <i class="fa fa-facebook-square" style="color:#0D4E9D;"></i>
+            <i class="fa fa-twitter-square" style="color:#1BA7D1;"></i>
+            <i class="fa fa-linkedin-square" style="color:#0071D3;"></i>
+        </div>
+        <p class="power">powered by SCEC Technologies</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var McButton = $("[data=hamburger-menu]");
+        var McBar1 = McButton.find("b:nth-child(1)");
+        var McBar2 = McButton.find("b:nth-child(2)");
+        var McBar3 = McButton.find("b:nth-child(3)");
+        McButton.click(function () {
+            $(this).toggleClass("active");
+            $("#menu").slideToggle({
+                duration: 500,
+                easing: "swing",
+                start: function () {
+                    $("#menu").css("display", "flex");
+                }
+            });
+            if (McButton.hasClass("active")) {
+                McBar1.velocity({ top: "50%" }, { duration: 200, easing: "swing" });
+                McBar3.velocity({ top: "50%" }, { duration: 200, easing: "swing" })
+                    .velocity({ rotateZ: "90deg" }, { duration: 800, delay: 200, easing: [500, 20] });
+                McButton.velocity({ rotateZ: "135deg" }, { duration: 800, delay: 200, easing: [500, 20] });
+            } else {
+                McButton.velocity("reverse");
+                McBar3.velocity({ rotateZ: "0deg" }, { duration: 800, easing: [500, 20] })
+                    .velocity({ top: "100%" }, { duration: 200, easing: "swing" });
+                McBar1.velocity("reverse", { delay: 800 });
+            }
+        });
+    </script>
+</body>
+
+</html>
