@@ -12,37 +12,19 @@
     <title>Mpanga Halaal Goats.</title>
 </head>
 <style>
-    header {
-        height: unset;
-        .banner {
-            padding:5% 5%;
-            height: unset;
-            background-color: #3F7D20;
-            width: 90%;
-            justify-content: space-evenly;
-            display: flex;
-            .info{
-                color: #F3EFF5;
-                width: 45%;
-                h2{
-                    font-weight:550;
-                    font-size: 2rem;
-                }
-                p{
-                    font-size: 1.3rem;
-                    line-height: 1.8rem;
-                }
-            }
-            img{
-        position: unset;
-            width: 45%;
-            aspect-ratio: 3/2;
-            object-fit: cover;
+    header .banner{ 
+        img{
+            object-position: top;
+        }
+        .inf {
+        h2{
+            width: 50%;
+        }
     }}
-    }
     .NB{
         padding-bottom: 20px;
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-evenly;
         img{
             width: 40%;
@@ -59,67 +41,15 @@
                 }
         }
     }
-    .Eid{
-        background: linear-gradient(#3F7D20 70%, transparent 30%) no-repeat;
-        padding-bottom: 5%;
-        display: flex;
-        justify-content: space-evenly;
-        img{
-            width: 40%;
+    @media (max-width:650px) {
+        header .banner{ 
+        .inf {
+            margin: 20px;
+            left: unset;
+        h2{
+            font-size: 2.2rem;
+            width: 60%;
         }
-        .inf{
-            width: 40%;
-            color: #F3EFF5;
-            h3{
-                font-weight:550;
-                font-size: 2rem;
-            }
-            p{
-                    font-size: 1.3rem;
-                    line-height: 1.8rem;
-                }
-        }
-    }
-    .overlay{ 
-        display: grid;
-        .fyf{
-            background-color: #ffffff00;
-            backdrop-filter: blur(5px);
-        position: relative;
-        z-index: 2;
-        border: 6px #50a128 solid;
-        justify-self: center;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #50a128;
-        align-self: center;
-        font-family: sans-serif;
-        padding: 10px 50px;
-        width: fit-content;
-        
-    }
-}
-@media (max-width:650px) {
-    header .banner {
-        padding: 0;
-            background-color: #3F7D20;
-            width: 100%;
-            justify-content: space-evenly;
-            display: flex;
-            flex-direction: column;
-            .info{
-                width: 90%;
-                padding: 2% 5%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                h2{
-                    text-align: center;
-                }
-            }
-            img{
-            width: 100%;
-
     }}
     .NB{
         display: flex;
@@ -149,58 +79,6 @@
                 }
         }
     }
-    .Eid{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column-reverse;
-        padding:2% 0;
-        img{
-            width: 100%;
-        }
-        .inf{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
-            h3{
-                width: 90%;
-                margin: auto;
-                font-weight:550;
-                text-align: center;
-                font-size: 2rem;
-            }
-            p{
-                width: 90%;
-                    font-size: 1.3rem;
-                    line-height: 1.8rem;
-                }
-        }
-    }
-    section.overlay{ 
-        display: grid;
-        margin: 0;
-        .fyf{
-            background-color: #ffffff00;
-            backdrop-filter: blur(5px);
-        position: absolute;
-        z-index: 2;
-        border: 6px #50a128 solid;
-        justify-self: center;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #50a128;
-        align-self: center;
-        font-family: sans-serif;
-        padding: 10px 50px;
-        width: fit-content;
-        
-    }
-    }
-    p{
-        font-size: 1.15rem !important;
-        line-height: 1.55rem !important;
-    }
 }
 </style>
 <body>
@@ -213,8 +91,8 @@
                 <ul id="menu">
                     <a href="index.html"><li>Home</li></a>
                     <a class="grey" href="#"><li>Services</li></a>
-                    <a href="breeding.html"><li>Breeding</li></a>
-                    <a class="active" href="#"><li>Slaughter</li></a>
+                    <a class="active" href="#"><li>Breeding</li></a>
+                    <a href="slaughter.html"><li>Slaughter</li></a>
                     <a class="grey" href="#"><li>About Us</li></a>
                     <a href="#footer"><button>Call Us</button></a>
                 </ul>
@@ -227,12 +105,10 @@
             </nav>
 
             <div class="banner">
-                <img src="meat.png" alt="">
-               <div class="info">
-                <h2>We Only Slaughter fully grown Healthy goats</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto tempore aliquid aspernatur ducimus. Numquam totam sed illo repellendus animi, nisi veritatis nihil, labore, quibusdam placeat asperiores veniam ea explicabo eligendi!</p>
-               </div>
-
+                <div class="inf">
+                    <h2 data-aos="fade-up" data-aos-duration="800">Explore our variety of Goat breeds</h2>
+                </div>
+                <img src="breeds.png" alt="">
             </div>
         </header>
         <section class="NB">
@@ -240,22 +116,11 @@
                 <h3>Naturally Better</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, voluptate dolorum! Illum est minima aspernatur. Sit minima similique, optio eveniet impedit velit, nisi commodi nihil incidunt numquam, quae odit deleniti.</p>
             </div>
-            <img src="goat1.png" alt="">
+            <img src="breed1.png" alt="">
         </section>
-        <section class="Eid">
-            <img src="eid.png" alt="">
-            <div class="inf">
-                <h3>Eid Al-Adha Preparations</h3>
-                <p>At Mpanga Farm, we offer top-quality goats and professional slaughtering services for Eid Al-Adha. Our goats are raised with care, and our services ensure everything is done according to Islamic guidelines. Let us make your Eid preparations seamless and stress-free!</p>
-            </div>
-        </section>
-
     </div>
     <section class="overlay">
-        <div class="fyf">
-            <p>For Your Family</p>
-        </div>
-        <img class="below" src="meat2.png" alt="">
+        <img class="below" src="below.png" alt="">
 
     </section>
     <footer id="footer" data-aos="zoom-in-up" data-aos-duration="800">
@@ -273,6 +138,12 @@
         </div>
         <p class="power">powered by SCEC Technologies</p>
     </footer>
+    <div id="customAlert" class="alert-box">
+        <div class="alert-content">
+          <span class="close-btn" onclick="closeAlert()">&times;</span>
+          <p>This Page is Still Under Construction</p>
+        </div>
+      </div>      
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
@@ -280,6 +151,18 @@
         AOS.init();
     </script>
     <script>
+        $(document).ready(function() {
+            showAlert();
+});
+    </script>
+    <script>
+            function showAlert() {
+  document.getElementById("customAlert").style.display = "block";
+}
+
+function closeAlert() {
+  document.getElementById("customAlert").style.display = "none";
+}
         var McButton = $("[data=hamburger-menu]");
         var McBar1 = McButton.find("b:nth-child(1)");
         var McBar2 = McButton.find("b:nth-child(2)");
